@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortellini</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rezept-sinan.css">
+    <link rel="stylesheet" href="./css/header.css">
+    
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <script src="./js/main.js"></script>
+    <script src="./js/rezept-sinan.js"></script>
+
+
+</head>
+
+<body onload="includeHTML()">
+    <header w3-include-html="header.html">
+
+    </header>
+    <section class="recipie">
+        <div class="recipie-content">
+            <h1>Tortellini</h1>
+            <div class="recipie-img" id="recipie-img" src="" alt="">
+            <div class="info-iconbar">
+                <div class="info-icon"><img src="img/clock-regular.svg" alt="">25 Min</div>
+                <div class="info-icon"><img src="img/brain-solid.svg" alt="">simpel</div>
+                <div class="info-icon"><img src="img/calendar-alt-regular.svg" alt="">18.06.2024</div>
+            </div>
+        </div>
+        <hr>
+        <div class="recipie-form">
+            <label for="input-amount">Zutaten für</label>
+            <input id="input-amount" type="number" required min="1" max="20">
+            <button class="btn" id="btn-amount">Portionen</button>
+        </div>
+
+        <span id="input-warning-msg" class="warning fadeout dont-show">Der Wert muss zwischen 1 und 20 liegen</span>
+        <table class="recipie-table">
+            <tbody id="recipie-table">
+
+            </tbody>
+        </table>
+        <h2>Zubereitung</h2>
+        <div class="info-iconbar">
+            <div class="info-icon"><img src="img/clock-regular.svg" alt="">ca. 20 Min.</div>
+            <div class="info-icon"><img src="img/clock-regular.svg" alt="">Gesamtzeit ca. 25 Min.</div>
+        </div>
+        <ol>
+
+            <p>
+                Wasser in einen großen Topf zum Kochen bringen und die Tortellini darin kochen, bis sie nach oben
+                steigenv( ca.3 Min.)
+                Währenddessen den Schinken in kleine Würfel schneiden und einen Topf anbraten. Dann den Knocblauch
+                pressen und kurz mitbraten-
+                Nach ca.1 Min: Sahne, Schmelzkäse in den Topf geben und je nach gewünschter Soßendicke 50-150 ml Wasser
+                dazu geben.
+                Nun die Tortellini abgießen und mit der Soße vermischen.
+            </p>
+        </ol>
+        <h3>Rezept erstellt von</h3>
+        <div class="autor-info">
+            <img class="autor-img" src="img/Sinan.JPG" alt="">
+            <span class="autor-name">Sinan K.</span>
+        </div>
+
+        </div>
+    </section>
+    <footer w3-include-html="footer.html">
+
+    </footer>
+</body>
+
+</html>

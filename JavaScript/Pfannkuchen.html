@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <body>
+        <h1>Rezept für Pfannkuchen</h1>
+        <button onclick="addIngredient('150g', 'Mehl')">Zutat 1</button>
+        <button onclick="addIngredient('250ml', 'Milch')">Zutat 2</button>
+        <button onclick="addIngredient('1 Prise', 'Salz')">Zutat 3</button>
+        <table>
+          <tbody id="table">
+            <tr>
+              <td>Menge</td>
+              <td>Name</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Eier</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <script>
+          function addIngredient(menge, name) {
+            document.getElementById("table").innerHTML += `
+            <tr>
+              <td>${menge}</td>
+              <td>${name}</td>
+            </tr>
+          `;
+          }
+        </script>
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

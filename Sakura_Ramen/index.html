@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sakura Ramen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+<style>
+
+html{ scroll-behavior: smooth ;
+}
+
+
+.hero_bg{
+
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+            color: white;
+            font-size: 94px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .underheader {
+            color: white;
+            font-size: 24px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 750px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menubar {
+            color: white;
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: absolute;
+            top: 24px;
+            left: 120px;
+            right: 120px;
+            bottom: 0px;
+
+        }
+
+    
+
+.menulist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.menu {
+            position: absolute;
+            right: 545px;
+        }
+
+        .standort {
+            position: absolute;
+            right: 375px;
+        }
+
+        .um {
+            position: absolute;
+            right: 250px;
+        }
+
+        .phonenumber {
+            position: absolute;
+            right: 0px;
+        }
+
+        .number {
+            background-color: #9F0908;
+            border-radius: 10px;
+            border-style: groove;
+            border-color: white;
+            padding: 8px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .number:hover {
+            background-color: #d10b0b !important;  
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .standort a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .standort a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+
+        .economica-bold{
+            
+            font-family: "Economica", sans-serif;
+            font-size: 56px;
+            font-weight: bold;
+        }
+
+        .um a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .um a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .second {
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        .middleheaders {
+            font-size: 80px;
+            font-weight: bold;
+            color: #9F0908;
+        }
+
+        .middlelogos {
+            width: 128px;
+        }
+
+        .between1 {
+            margin-top: 64px;
+            padding-left: 200px;
+            padding-right: 200px;
+            text-align: center;
+
+        }
+
+        .between2 {
+            padding-top: 16px;
+        }
+
+        .how {
+            display: flex;
+            justify-content: center;
+        }
+
+        .explanation {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .third {
+            background-image: url(/Sakura_Ramen/assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg) ;
+            margin-top: 120px;
+            margin-bottom: 120px;
+            
+        }
+        
+        #id{
+            background-image: url(/Sakura_Ramen/assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg)
+
+       
+        }
+       
+        .ourmenu {
+            padding-top: 120px;
+            padding-bottom: 64px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menuimage {
+            width: 352px;
+        }
+
+        .menu1 {
+            padding-left: 120px;
+            padding-bottom: 56px;
+        }
+
+        .menu2 {
+            padding-right: 120px;
+            padding-bottom: 56px;
+        }
+
+        .menu3 {
+            padding-left: 120px;
+            padding-bottom: 120px;
+        }
+
+        .menuprice {
+            font-weight: bold;
+            font-size: 32px;
+            color: #675E54;
+        }
+
+
+        .menufirst {
+            display: flex;
+            align-items: center;
+        }
+
+        .menusecond {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .menutext {
+            padding-left: 80px;
+            width: 450;
+        }
+
+        .menuheader1 {
+            padding-bottom: 16px;
+        }
+
+
+        .sakura_logo {
+            width: 64px;
+            height: 64px;
+        }
+
+        
+        .menumeat1 {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .menutext2 {
+            padding-right: 80px;
+            width: 450;
+        }
+
+        .middle {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .findusat {
+            padding-bottom: 8px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .standort_logo {
+            width: 24px;   
+        }
+
+        .adress {
+            font-size: 24px;
+            padding-bottom: 64px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .iframe {
+           
+            width: 100%;
+        }
+
+        .footer {
+            margin-top: 14px;
+            background-color: #0a141e;
+            height: 130px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            padding-left: 120px;
+            padding-right: 120px;
+            
+        }
+
+        .footer_logo {
+            height: 44px;
+        }
+
+        .socials {
+            width: 40px;
+        }
+
+        .socialslist {
+            display: flex;
+            padding-left: 20px;
+        }
+
+
+
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+    
+</head>
+
+<body>
+    
+
+
+
+
+    <div>
+    <img class="hero_bg" src="/Sakura_Ramen/assets/img/1_hero/JPG/hero_bg.jpg">
+    </div>
+    <div class="header">
+        <span class="raleway">SAKURA RAMEN</span>
+        </div>
+        <div class="underheader">
+     <span class="raleway"> THE BEST RAMEN IN TOWN</span>
+        </div>
+
+        <div class="menubar">
+        <div>
+        <img class="sakura_logo" src="/Sakura_Ramen/assets/img/1_hero/PNG/sakura_logo.png">
+
+        </div>
+
+        <div class="menulist">
+        <div class="menu">
+            <div class="raleway">
+        <a href="#menu">MENÜ</a>
+            </div>
+        </div>
+        <div class="standort">
+            <div class="raleway">
+      <a href="#location">LOCATIONS</a>
+            </div>
+        </div>
+        <div class="um">
+      <div class="raleway">
+         <a href="#location">ABOUT</a>
+         </div>
+        </div>
+        <div class="phonenumber">
+         <div class="raleway">
+         <div>
+        <a class="number" href="tel:017654564534">
+       <img class="phone" src="/Sakura_Ramen/assets/img/1_hero/PNG/phone.png">   0176 54564534
+        
+         </a>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+<div class="second">
+        <div>
+        <div class="how">
+         <div class="raleway">
+        <div class="middleheaders">
+       <span class="middleheaders">HOW TO ORDER</span>
+         </div>
+         </div>
+        </div>
+        <div class="explanation">
+         <div class="between1">
+        <div>
+      <img class="middlelogos" src="/Sakura_Ramen/assets/img/1_hero/PNG/noodle.png">
+        </div>
+        <div class="between2">
+        <span class="economica-bold">Pick your<br> noodle</span>
+         </div>
+        </div>
+         <div class="between1">
+        <div>
+         <img class="middlelogos" src="/Sakura_Ramen/assets/img/2_section_how_to_order/PNG/broth.png">
+        </div>
+         <div class="between2">
+           <span class="economica-bold">Pick your<br> broth</span>
+         </div>
+     </div>
+        <div class="between1">
+         <div>
+        <img class="middlelogos" src="/Sakura_Ramen/assets/img/2_section_how_to_order/PNG/egg.png">
+          </div>
+          <div class="between2">
+         <span class="economica-bold">Add your<br> toppings</span>
+       </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="third">
+   
+    <div>
+        <div class="ourmenu" id="menu">
+         <div class="raleway">
+          <span class="middleheaders">OUR MENU</span>
+            </div>
+    </div>
+    <div class="menu1">
+          <div class="menufirst">
+    <div>
+        <img class="menuimage" src="/Sakura_Ramen/assets/img/3_section_our_menu/Png/R1.png">
+       </div>
+        <div class="menutext">
+        <div>
+         <div class="menuheader1">
+      <span class="economica-bold">Tonkotsu Ramen</span>
+        </div>
+      </div>
+       <div class="menumeat1">
+        <div>
+         <div class="menuprice">
+             <span class="raleway">CHICKEN</span>
+          </div>
+          <div class="middle">
+          <div class="menuprice">
+           <span class="raleway">BEEF</span>
+            </div>
+        </div>
+            <div class="menuprice">
+           <span class="raleway">SHRIMP</span>
+           </div>
+          </div>
+          <div>
+         <div class="menuprice">
+           <span class="raleway">11.95€</span>
+           </div>
+          <div class="middle">
+             <div class="menuprice">
+              <span class="raleway">12.95€</span>
+              </div>
+          </div>
+          <div class="menuprice">
+               <span class="raleway">13.95€</span>
+             </div>
+             </div>
+           </div>
+           </div>    
+            </div>
+        </div>
+        <div class="menu2">
+        <div class="menusecond">
+           <div class="menutext2">
+           <div>
+           <div class="menuheader1">
+      <span class="economica-bold">Spicy Miso Ramen</span>
+       </div>
+      </div>
+         <div class="menumeat1">
+           <div>
+           <div class="menuprice">
+              <span class="raleway">CHICKEN</span>
+               </div>
+           <div class="middle">
+             <div class="menuprice">
+                 <span class="raleway">BEEF</span>
+                  </div>
+                </div>
+          <div class="menuprice">
+              <span class="raleway">SHRIMP</span>
+              </div>
+           </div>
+            <div>
+             <div class="menuprice">
+             <span class="raleway">11.95€</span>
+               </div>
+              <div class="middle">
+               <div class="menuprice">
+                  <span class="raleway">12.95€</span>
+        </div>
+         </div>
+            <div class="menuprice">
+             <span class="raleway">13.95€</span>
+           </div>
+            </div>
+            </div>
+          </div>
+        <div>
+         <img class="menuimage" src="/Sakura_Ramen/assets/img/3_section_our_menu/Png/R2.png">
+          </div>    
+         </div>
+        </div>
+        <div class="menu3">
+           <div class="menufirst">
+         <div>
+           <img class="menuimage" src="/Sakura_Ramen/assets/img/3_section_our_menu/Png/R3.png">
+        </div>
+        <div class="menutext">
+         <div>
+         <div class="menuheader1">
+         <span class="economica-bold">Shio Ramen</span>
+             </div>
+              </div>
+        <div class="menumeat1">
+             <div>
+              <div class="menuprice">
+            <span class="raleway">CHICKEN</span>
+             </div>
+         <div class="middle">
+         <div class="menuprice">
+        <span class="raleway">BEEF</span>
+         </div>
+            </div>
+            <div class="menuprice">
+              <span class="raleway">SHRIMP</span>
+             </div>
+         </div>
+             <div>
+             <div class="menuprice">
+              <span class="raleway">11.95€</span>
+             </div>
+            <div class="middle">
+             <div class="menuprice">
+       <span class="raleway">12.95€</span>
+          </div>
+            </div>
+         <div class="menuprice">
+          <span class="raleway">13.95€</span>
+         </div>
+         </div>
+          </div>
+        </div>    
+    </div>
+        </div>
+       </div>
+</div>
+
+<div>
+    <div class="findusat" id="location">
+        <div class="raleway">
+            <span class="middleheaders">FIND US AT</span>
+        </div>
+    </div>
+    <div class="adress">
+        <img class="standort_logo" src="/Sakura_Ramen/assets/img/4_section_find_us_at/PNG/map_marker.png">
+        <span class="raleway">Kapuzinerstraße 31, München 80337</span>
+    </div>
+    <div>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.207967591087!2d11.558628376909551!3d48.125512652000296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1711379852102!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<div class="footer">
+        
+    <div>
+        <img class="footer_logo" src="/Sakura_Ramen/assets/img/5_section_footer/PNG/sakura_ramen_logo_and_text.png">
+    </div>
+    <div class="socialslist">
+        <div class="socialslist">
+            <a href="https://www.tripadvisor.de/" target="_blank">
+                <img class="socials" src="/Sakura_Ramen/assets/img/5_section_footer/PNG/tripadvisor_logo.png">
+            </a>
+        </div>
+        <div class="socialslist">
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank">
+                <img class="socials" src="/Sakura_Ramen/assets/img/5_section_footer/PNG/facebook_logo.png">
+            </a>
+        </div>
+        <div class="socialslist">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="socials" src="/Sakura_Ramen/assets/img/5_section_footer/PNG/instagrram_logo.png">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
